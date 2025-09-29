@@ -1,16 +1,21 @@
-# Ignorer les environnements virtuels
-.venv/
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.swp
+*.DS_Store
 
-# Ignorer les fichiers de logs
-*.log
+# Virtual environment
+.venv/
 
-# Ignorer les bases de données générées (gros fichiers)
+# SQLite databases
 **/data/*.db
+!**/data/sample_small.db   # on garde le petit exemple
 
-# Garde éventuellement un exemple de DB minuscule
-# data/sample_small.db
+# CSV exports
+**/data/*.csv
+**/data/*.json
 
-# Ignorer les CSV temporaires de simulation
-**/data/backup_*.csv
+# Logs
+*.log
