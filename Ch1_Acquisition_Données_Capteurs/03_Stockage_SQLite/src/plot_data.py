@@ -1,36 +1,47 @@
 # graphique matplotlib
 
-import pandas as pd
+# src/plot_data.py
+import sqlite3
 import matplotlib.pyplot as plt
+import argparse
 
-def plot_data(csv_path="data/export_from_db.csv"):
-    # Charger le CSV avec pandas
-    df = pd.read_csv(csv_path)
+def plot_from_db(db_path="data/capteurs.db", output_file="screenshots/graphique_mesures.png"):
+    conn = sqlite3.connect(db_path)
+    cur = conn.cursor()
 
-    if df.empty:
-        print("⚠️ Pas de données à afficher.")
+    cur.execute("SELECT timestamp, temperature, humidite FROM mesures ORDER BY id ASC")
+    rows = cur.fetchall()
+    conn.close()
+
+    if not rows:
+        print("⚠️ La base est vide, ajoute d'abord des mesures (simulation ou Arduino).")
         return
-    
-    # Tracer température et humidité
-    plt.figure(figsize=(10, 5))
-    plt.plot(df["temps"], df["temperature"], label="Température (°C)", color="red", marker="o")
-    plt.plot(df["temps"], df["humidite"], label="Humidité (%)", color="blue", marker="x")
-    
-    plt.xlabel("Temps")
+
+    temps = [r[0] for r in rows]
+    temperatures = [r[1] for r in rows]
+    humidites = [r[2] for r in rows]
+
+    plt.figure(figsize=(10,5))
+    plt.plot(temps, temperatures, label="Température (°C)", color="red", marker="o")
+    plt.plot(temps, humidites, label="Humidité (%)", color="blue", marker="x")
+    plt.xlabel("Horodatage")
     plt.ylabel("Valeurs")
-    plt.title("Évolution Température / Humidité")
+    plt.title("Évolution Température & Humidité")
     plt.legend()
-    plt.grid(True)
+    plt.xticks(rotation=45)
     plt.tight_layout()
-    
-    # Sauvegarder une image dans screenshots/
-    output_img = "screenshots/graphique_mesures.png"
-    plt.savefig(output_img)
-    
-    print(f"✅ Graphique sauvegardé dans {output_img}")
+    plt.savefig(output_file)
     plt.show()
+    print(f"✅ Graphique généré : {output_file}")
 
 if __name__ == "__main__":
-    plot_data()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--db", default="data/capteurs.db", help="Chemin vers la base SQLite")
+    parser.add_argument("--output", default="screenshots/graphique_mesures.png", help="Nom du fichier PNG de sortie")
+    args = parser.parse_args()
+
+    plot_from_db(db_path=args.db, output_file=args.output)
+
+
 
 # graphique matplotlib
