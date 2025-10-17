@@ -1,0 +1,1292 @@
+[
+  {
+    "timestamp": "2025-10-04 21:37:11",
+    "topic": "sensors/temperature",
+    "payload": "23.7"
+  },
+  {
+    "timestamp": "2025-10-04 21:40:39",
+    "topic": "sensors/temperature",
+    "payload": "21.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:40:39",
+    "topic": "sensors/humidity",
+    "payload": "62.0"
+  },
+  {
+    "timestamp": "2025-10-04 21:40:44",
+    "topic": "sensors/temperature",
+    "payload": "24.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:40:44",
+    "topic": "sensors/humidity",
+    "payload": "53.7"
+  },
+  {
+    "timestamp": "2025-10-04 21:40:49",
+    "topic": "sensors/temperature",
+    "payload": "26.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:40:49",
+    "topic": "sensors/humidity",
+    "payload": "34.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:40:54",
+    "topic": "sensors/temperature",
+    "payload": "29.0"
+  },
+  {
+    "timestamp": "2025-10-04 21:40:54",
+    "topic": "sensors/humidity",
+    "payload": "34.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:40:59",
+    "topic": "sensors/temperature",
+    "payload": "23.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:40:59",
+    "topic": "sensors/humidity",
+    "payload": "69.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:04",
+    "topic": "sensors/temperature",
+    "payload": "28.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:04",
+    "topic": "sensors/humidity",
+    "payload": "60.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:09",
+    "topic": "sensors/temperature",
+    "payload": "21.0"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:09",
+    "topic": "sensors/humidity",
+    "payload": "53.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:14",
+    "topic": "sensors/temperature",
+    "payload": "21.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:14",
+    "topic": "sensors/humidity",
+    "payload": "36.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:19",
+    "topic": "sensors/temperature",
+    "payload": "24.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:19",
+    "topic": "sensors/humidity",
+    "payload": "43.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:24",
+    "topic": "sensors/temperature",
+    "payload": "29.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:24",
+    "topic": "sensors/humidity",
+    "payload": "32.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:29",
+    "topic": "sensors/temperature",
+    "payload": "20.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:29",
+    "topic": "sensors/humidity",
+    "payload": "67.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:34",
+    "topic": "sensors/temperature",
+    "payload": "25.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:34",
+    "topic": "sensors/humidity",
+    "payload": "55.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:39",
+    "topic": "sensors/temperature",
+    "payload": "29.0"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:39",
+    "topic": "sensors/humidity",
+    "payload": "68.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:44",
+    "topic": "sensors/temperature",
+    "payload": "27.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:44",
+    "topic": "sensors/humidity",
+    "payload": "56.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:49",
+    "topic": "sensors/temperature",
+    "payload": "25.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:49",
+    "topic": "sensors/humidity",
+    "payload": "44.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:54",
+    "topic": "sensors/temperature",
+    "payload": "28.0"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:54",
+    "topic": "sensors/humidity",
+    "payload": "68.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:59",
+    "topic": "sensors/temperature",
+    "payload": "25.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:41:59",
+    "topic": "sensors/humidity",
+    "payload": "57.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:04",
+    "topic": "sensors/temperature",
+    "payload": "26.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:04",
+    "topic": "sensors/humidity",
+    "payload": "61.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:09",
+    "topic": "sensors/temperature",
+    "payload": "22.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:09",
+    "topic": "sensors/humidity",
+    "payload": "60.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:14",
+    "topic": "sensors/temperature",
+    "payload": "23.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:14",
+    "topic": "sensors/humidity",
+    "payload": "46.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:19",
+    "topic": "sensors/temperature",
+    "payload": "29.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:19",
+    "topic": "sensors/humidity",
+    "payload": "43.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:24",
+    "topic": "sensors/temperature",
+    "payload": "26.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:24",
+    "topic": "sensors/humidity",
+    "payload": "53.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:29",
+    "topic": "sensors/temperature",
+    "payload": "20.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:29",
+    "topic": "sensors/humidity",
+    "payload": "54.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:34",
+    "topic": "sensors/temperature",
+    "payload": "26.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:34",
+    "topic": "sensors/humidity",
+    "payload": "64.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:39",
+    "topic": "sensors/temperature",
+    "payload": "27.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:39",
+    "topic": "sensors/humidity",
+    "payload": "42.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:44",
+    "topic": "sensors/temperature",
+    "payload": "25.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:44",
+    "topic": "sensors/humidity",
+    "payload": "42.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:49",
+    "topic": "sensors/temperature",
+    "payload": "28.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:49",
+    "topic": "sensors/humidity",
+    "payload": "40.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:54",
+    "topic": "sensors/temperature",
+    "payload": "26.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:54",
+    "topic": "sensors/humidity",
+    "payload": "55.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:59",
+    "topic": "sensors/temperature",
+    "payload": "23.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:42:59",
+    "topic": "sensors/humidity",
+    "payload": "69.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:04",
+    "topic": "sensors/temperature",
+    "payload": "25.7"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:04",
+    "topic": "sensors/humidity",
+    "payload": "45.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:09",
+    "topic": "sensors/temperature",
+    "payload": "25.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:09",
+    "topic": "sensors/humidity",
+    "payload": "54.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:14",
+    "topic": "sensors/temperature",
+    "payload": "26.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:14",
+    "topic": "sensors/humidity",
+    "payload": "45.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:19",
+    "topic": "sensors/temperature",
+    "payload": "25.0"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:19",
+    "topic": "sensors/humidity",
+    "payload": "50.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:24",
+    "topic": "sensors/temperature",
+    "payload": "29.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:24",
+    "topic": "sensors/humidity",
+    "payload": "65.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:29",
+    "topic": "sensors/temperature",
+    "payload": "23.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:29",
+    "topic": "sensors/humidity",
+    "payload": "68.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:34",
+    "topic": "sensors/temperature",
+    "payload": "20.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:34",
+    "topic": "sensors/humidity",
+    "payload": "55.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:39",
+    "topic": "sensors/temperature",
+    "payload": "24.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:39",
+    "topic": "sensors/humidity",
+    "payload": "65.0"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:44",
+    "topic": "sensors/temperature",
+    "payload": "25.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:44",
+    "topic": "sensors/humidity",
+    "payload": "61.7"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:49",
+    "topic": "sensors/temperature",
+    "payload": "25.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:49",
+    "topic": "sensors/humidity",
+    "payload": "66.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:54",
+    "topic": "sensors/temperature",
+    "payload": "27.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:54",
+    "topic": "sensors/humidity",
+    "payload": "63.0"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:59",
+    "topic": "sensors/temperature",
+    "payload": "23.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:43:59",
+    "topic": "sensors/humidity",
+    "payload": "58.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:04",
+    "topic": "sensors/temperature",
+    "payload": "23.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:04",
+    "topic": "sensors/humidity",
+    "payload": "68.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:09",
+    "topic": "sensors/temperature",
+    "payload": "22.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:09",
+    "topic": "sensors/humidity",
+    "payload": "56.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:14",
+    "topic": "sensors/temperature",
+    "payload": "22.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:14",
+    "topic": "sensors/humidity",
+    "payload": "50.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:19",
+    "topic": "sensors/temperature",
+    "payload": "23.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:19",
+    "topic": "sensors/humidity",
+    "payload": "50.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:24",
+    "topic": "sensors/temperature",
+    "payload": "24.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:24",
+    "topic": "sensors/humidity",
+    "payload": "30.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:29",
+    "topic": "sensors/temperature",
+    "payload": "21.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:29",
+    "topic": "sensors/humidity",
+    "payload": "45.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:34",
+    "topic": "sensors/temperature",
+    "payload": "21.7"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:34",
+    "topic": "sensors/humidity",
+    "payload": "42.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:39",
+    "topic": "sensors/temperature",
+    "payload": "27.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:39",
+    "topic": "sensors/humidity",
+    "payload": "62.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:44",
+    "topic": "sensors/temperature",
+    "payload": "28.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:44",
+    "topic": "sensors/humidity",
+    "payload": "41.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:49",
+    "topic": "sensors/temperature",
+    "payload": "23.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:49",
+    "topic": "sensors/humidity",
+    "payload": "58.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:54",
+    "topic": "sensors/temperature",
+    "payload": "28.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:54",
+    "topic": "sensors/humidity",
+    "payload": "34.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:59",
+    "topic": "sensors/temperature",
+    "payload": "26.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:44:59",
+    "topic": "sensors/humidity",
+    "payload": "48.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:04",
+    "topic": "sensors/temperature",
+    "payload": "20.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:04",
+    "topic": "sensors/humidity",
+    "payload": "65.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:09",
+    "topic": "sensors/temperature",
+    "payload": "26.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:09",
+    "topic": "sensors/humidity",
+    "payload": "58.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:14",
+    "topic": "sensors/temperature",
+    "payload": "27.7"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:14",
+    "topic": "sensors/humidity",
+    "payload": "66.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:19",
+    "topic": "sensors/temperature",
+    "payload": "23.0"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:19",
+    "topic": "sensors/humidity",
+    "payload": "65.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:24",
+    "topic": "sensors/temperature",
+    "payload": "21.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:24",
+    "topic": "sensors/humidity",
+    "payload": "69.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:29",
+    "topic": "sensors/temperature",
+    "payload": "29.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:29",
+    "topic": "sensors/humidity",
+    "payload": "67.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:34",
+    "topic": "sensors/temperature",
+    "payload": "28.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:34",
+    "topic": "sensors/humidity",
+    "payload": "69.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:39",
+    "topic": "sensors/temperature",
+    "payload": "26.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:39",
+    "topic": "sensors/humidity",
+    "payload": "61.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:44",
+    "topic": "sensors/temperature",
+    "payload": "20.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:44",
+    "topic": "sensors/humidity",
+    "payload": "57.7"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:49",
+    "topic": "sensors/temperature",
+    "payload": "24.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:49",
+    "topic": "sensors/humidity",
+    "payload": "34.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:54",
+    "topic": "sensors/temperature",
+    "payload": "21.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:54",
+    "topic": "sensors/humidity",
+    "payload": "49.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:59",
+    "topic": "sensors/temperature",
+    "payload": "20.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:45:59",
+    "topic": "sensors/humidity",
+    "payload": "55.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:04",
+    "topic": "sensors/temperature",
+    "payload": "23.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:04",
+    "topic": "sensors/humidity",
+    "payload": "35.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:09",
+    "topic": "sensors/temperature",
+    "payload": "28.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:09",
+    "topic": "sensors/humidity",
+    "payload": "53.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:14",
+    "topic": "sensors/temperature",
+    "payload": "21.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:14",
+    "topic": "sensors/humidity",
+    "payload": "46.7"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:19",
+    "topic": "sensors/temperature",
+    "payload": "27.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:19",
+    "topic": "sensors/humidity",
+    "payload": "62.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:24",
+    "topic": "sensors/temperature",
+    "payload": "29.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:24",
+    "topic": "sensors/humidity",
+    "payload": "49.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:29",
+    "topic": "sensors/temperature",
+    "payload": "25.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:29",
+    "topic": "sensors/humidity",
+    "payload": "65.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:34",
+    "topic": "sensors/temperature",
+    "payload": "23.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:34",
+    "topic": "sensors/humidity",
+    "payload": "35.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:39",
+    "topic": "sensors/temperature",
+    "payload": "20.7"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:39",
+    "topic": "sensors/humidity",
+    "payload": "30.7"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:44",
+    "topic": "sensors/temperature",
+    "payload": "28.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:44",
+    "topic": "sensors/humidity",
+    "payload": "60.7"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:49",
+    "topic": "sensors/temperature",
+    "payload": "26.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:49",
+    "topic": "sensors/humidity",
+    "payload": "69.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:54",
+    "topic": "sensors/temperature",
+    "payload": "20.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:54",
+    "topic": "sensors/humidity",
+    "payload": "58.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:59",
+    "topic": "sensors/temperature",
+    "payload": "27.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:46:59",
+    "topic": "sensors/humidity",
+    "payload": "38.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:04",
+    "topic": "sensors/temperature",
+    "payload": "23.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:04",
+    "topic": "sensors/humidity",
+    "payload": "35.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:09",
+    "topic": "sensors/temperature",
+    "payload": "27.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:09",
+    "topic": "sensors/humidity",
+    "payload": "62.0"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:14",
+    "topic": "sensors/temperature",
+    "payload": "20.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:14",
+    "topic": "sensors/humidity",
+    "payload": "51.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:19",
+    "topic": "sensors/temperature",
+    "payload": "25.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:19",
+    "topic": "sensors/humidity",
+    "payload": "56.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:24",
+    "topic": "sensors/temperature",
+    "payload": "22.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:24",
+    "topic": "sensors/humidity",
+    "payload": "38.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:29",
+    "topic": "sensors/temperature",
+    "payload": "28.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:29",
+    "topic": "sensors/humidity",
+    "payload": "69.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:34",
+    "topic": "sensors/temperature",
+    "payload": "23.7"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:34",
+    "topic": "sensors/humidity",
+    "payload": "36.7"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:39",
+    "topic": "sensors/temperature",
+    "payload": "24.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:39",
+    "topic": "sensors/humidity",
+    "payload": "50.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:44",
+    "topic": "sensors/temperature",
+    "payload": "21.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:44",
+    "topic": "sensors/humidity",
+    "payload": "42.7"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:49",
+    "topic": "sensors/temperature",
+    "payload": "28.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:49",
+    "topic": "sensors/humidity",
+    "payload": "60.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:54",
+    "topic": "sensors/temperature",
+    "payload": "21.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:54",
+    "topic": "sensors/humidity",
+    "payload": "55.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:59",
+    "topic": "sensors/temperature",
+    "payload": "20.0"
+  },
+  {
+    "timestamp": "2025-10-04 21:47:59",
+    "topic": "sensors/humidity",
+    "payload": "61.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:04",
+    "topic": "sensors/temperature",
+    "payload": "20.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:04",
+    "topic": "sensors/humidity",
+    "payload": "54.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:09",
+    "topic": "sensors/temperature",
+    "payload": "22.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:09",
+    "topic": "sensors/humidity",
+    "payload": "68.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:14",
+    "topic": "sensors/temperature",
+    "payload": "20.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:14",
+    "topic": "sensors/humidity",
+    "payload": "50.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:19",
+    "topic": "sensors/temperature",
+    "payload": "25.0"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:19",
+    "topic": "sensors/humidity",
+    "payload": "50.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:24",
+    "topic": "sensors/temperature",
+    "payload": "28.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:24",
+    "topic": "sensors/humidity",
+    "payload": "38.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:29",
+    "topic": "sensors/temperature",
+    "payload": "22.7"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:29",
+    "topic": "sensors/humidity",
+    "payload": "47.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:34",
+    "topic": "sensors/temperature",
+    "payload": "24.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:34",
+    "topic": "sensors/humidity",
+    "payload": "69.7"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:39",
+    "topic": "sensors/temperature",
+    "payload": "28.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:39",
+    "topic": "sensors/humidity",
+    "payload": "44.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:44",
+    "topic": "sensors/temperature",
+    "payload": "25.0"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:44",
+    "topic": "sensors/humidity",
+    "payload": "45.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:49",
+    "topic": "sensors/temperature",
+    "payload": "24.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:49",
+    "topic": "sensors/humidity",
+    "payload": "40.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:54",
+    "topic": "sensors/temperature",
+    "payload": "23.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:54",
+    "topic": "sensors/humidity",
+    "payload": "69.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:59",
+    "topic": "sensors/temperature",
+    "payload": "25.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:48:59",
+    "topic": "sensors/humidity",
+    "payload": "59.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:04",
+    "topic": "sensors/temperature",
+    "payload": "22.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:04",
+    "topic": "sensors/humidity",
+    "payload": "51.0"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:09",
+    "topic": "sensors/temperature",
+    "payload": "29.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:09",
+    "topic": "sensors/humidity",
+    "payload": "43.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:14",
+    "topic": "sensors/temperature",
+    "payload": "23.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:14",
+    "topic": "sensors/humidity",
+    "payload": "65.0"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:19",
+    "topic": "sensors/temperature",
+    "payload": "28.1"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:19",
+    "topic": "sensors/humidity",
+    "payload": "42.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:24",
+    "topic": "sensors/temperature",
+    "payload": "28.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:24",
+    "topic": "sensors/humidity",
+    "payload": "44.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:29",
+    "topic": "sensors/temperature",
+    "payload": "20.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:29",
+    "topic": "sensors/humidity",
+    "payload": "59.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:34",
+    "topic": "sensors/temperature",
+    "payload": "23.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:34",
+    "topic": "sensors/humidity",
+    "payload": "37.7"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:39",
+    "topic": "sensors/temperature",
+    "payload": "27.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:39",
+    "topic": "sensors/humidity",
+    "payload": "68.8"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:44",
+    "topic": "sensors/temperature",
+    "payload": "28.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:44",
+    "topic": "sensors/humidity",
+    "payload": "37.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:49",
+    "topic": "sensors/temperature",
+    "payload": "28.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:49",
+    "topic": "sensors/humidity",
+    "payload": "52.7"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:54",
+    "topic": "sensors/temperature",
+    "payload": "23.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:54",
+    "topic": "sensors/humidity",
+    "payload": "50.2"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:59",
+    "topic": "sensors/temperature",
+    "payload": "25.3"
+  },
+  {
+    "timestamp": "2025-10-04 21:49:59",
+    "topic": "sensors/humidity",
+    "payload": "63.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:50:04",
+    "topic": "sensors/temperature",
+    "payload": "26.0"
+  },
+  {
+    "timestamp": "2025-10-04 21:50:04",
+    "topic": "sensors/humidity",
+    "payload": "58.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:51:09",
+    "topic": "sensors/temperature",
+    "payload": "26.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:51:14",
+    "topic": "sensors/temperature",
+    "payload": "23.9"
+  },
+  {
+    "timestamp": "2025-10-04 21:51:19",
+    "topic": "sensors/humidity",
+    "payload": "72"
+  },
+  {
+    "timestamp": "2025-10-04 21:51:24",
+    "topic": "sensors/temperature",
+    "payload": "29.6"
+  },
+  {
+    "timestamp": "2025-10-04 21:54:50",
+    "topic": "sensors/temperature",
+    "payload": "23.7"
+  },
+  {
+    "timestamp": "2025-10-04 21:54:59",
+    "topic": "sensors/temperature",
+    "payload": "23.7"
+  },
+  {
+    "timestamp": "2025-10-04 21:55:46",
+    "topic": "sensors/temperature",
+    "payload": "laba"
+  },
+  {
+    "timestamp": "2025-10-04 21:59:35",
+    "topic": "sensors/temperature",
+    "payload": "29.4"
+  },
+  {
+    "timestamp": "2025-10-04 21:59:40",
+    "topic": "sensors/humidity",
+    "payload": "62"
+  },
+  {
+    "timestamp": "2025-10-04 21:59:45",
+    "topic": "sensors/temperature",
+    "payload": "26.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:59:50",
+    "topic": "sensors/temperature",
+    "payload": "23.5"
+  },
+  {
+    "timestamp": "2025-10-04 21:59:55",
+    "topic": "sensors/humidity",
+    "payload": "49"
+  },
+  {
+    "timestamp": "2025-10-04 22:00:00",
+    "topic": "sensors/temperature",
+    "payload": "24.7"
+  },
+  {
+    "timestamp": "2025-10-04 22:00:05",
+    "topic": "sensors/humidity",
+    "payload": "31"
+  },
+  {
+    "timestamp": "2025-10-04 22:00:10",
+    "topic": "sensors/humidity",
+    "payload": "46"
+  },
+  {
+    "timestamp": "2025-10-04 22:00:15",
+    "topic": "sensors/humidity",
+    "payload": "48"
+  },
+  {
+    "timestamp": "2025-10-04 22:00:20",
+    "topic": "sensors/temperature",
+    "payload": "28.1"
+  },
+  {
+    "timestamp": "2025-10-04 22:00:25",
+    "topic": "sensors/temperature",
+    "payload": "24.2"
+  },
+  {
+    "timestamp": "2025-10-04 22:00:30",
+    "topic": "sensors/humidity",
+    "payload": "41"
+  },
+  {
+    "timestamp": "2025-10-04 22:00:35",
+    "topic": "sensors/temperature",
+    "payload": "21.8"
+  },
+  {
+    "timestamp": "2025-10-04 22:00:40",
+    "topic": "sensors/humidity",
+    "payload": "77"
+  },
+  {
+    "timestamp": "2025-10-04 22:00:45",
+    "topic": "sensors/humidity",
+    "payload": "66"
+  },
+  {
+    "timestamp": "2025-10-04 22:00:50",
+    "topic": "sensors/humidity",
+    "payload": "61"
+  },
+  {
+    "timestamp": "2025-10-04 22:00:55",
+    "topic": "sensors/humidity",
+    "payload": "35"
+  },
+  {
+    "timestamp": "2025-10-04 22:01:00",
+    "topic": "sensors/humidity",
+    "payload": "44"
+  },
+  {
+    "timestamp": "2025-10-04 22:01:05",
+    "topic": "sensors/temperature",
+    "payload": "24.9"
+  },
+  {
+    "timestamp": "2025-10-04 22:01:10",
+    "topic": "sensors/temperature",
+    "payload": "29.2"
+  },
+  {
+    "timestamp": "2025-10-04 22:01:15",
+    "topic": "sensors/humidity",
+    "payload": "42"
+  },
+  {
+    "timestamp": "2025-10-04 22:01:20",
+    "topic": "sensors/temperature",
+    "payload": "25.5"
+  }
+]

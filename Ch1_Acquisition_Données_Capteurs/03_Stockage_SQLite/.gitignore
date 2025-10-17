@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.DS_Store
+
+# Virtual environment
+.venv/
+
+# SQLite databases
+**/data/*.db
+!**/data/sample_small.db   # on garde le petit exemple
+
+# CSV exports
+**/data/*.csv
+**/data/*.json
+
+# Logs
+*.log

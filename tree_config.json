@@ -1,0 +1,12 @@
+{
+    "ignored_dirs": [
+        ".venv",
+        "__pycache__",
+        "data",
+        "screenshots"
+    ],
+    "ignored_files": [
+        ".gitignore",
+        "requirements.txt"
+    ]
+}

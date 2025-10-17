@@ -1,0 +1,35 @@
+timestamp,topic,payload
+2025-10-04 22:37:04,sensors/temperature,23.7
+timestamp,topic,payload
+2025-10-04 22:37:04,sensors/temperature,23.7
+2025-10-04 22:38:59,sensors/humidity,48
+2025-10-04 22:38:59,sensors/temperature,26.7
+2025-10-04 22:38:59,sensors/humidity,48
+2025-10-04 22:39:04,sensors/temperature,24.1
+2025-10-04 22:39:04,sensors/temperature,24.1
+2025-10-04 22:39:04,sensors/humidity,67
+2025-10-04 22:39:04,sensors/humidity,67
+2025-10-04 22:39:09,sensors/temperature,22.3
+2025-10-04 22:39:09,sensors/temperature,22.3
+2025-10-04 22:39:09,sensors/humidity,67
+2025-10-04 22:39:09,sensors/humidity,67
+2025-10-04 22:39:14,sensors/temperature,22.8
+2025-10-04 22:39:14,sensors/temperature,22.8
+2025-10-04 22:39:14,sensors/humidity,75
+2025-10-04 22:39:14,sensors/humidity,75
+2025-10-04 22:39:19,sensors/humidity,34
+2025-10-04 22:39:19,sensors/humidity,34
+2025-10-04 22:39:19,sensors/humidity,45
+2025-10-04 22:39:19,sensors/humidity,45
+2025-10-04 22:39:24,sensors/temperature,29.6
+2025-10-04 22:39:24,sensors/temperature,29.6
+2025-10-04 22:39:24,sensors/humidity,75
+2025-10-04 22:39:24,sensors/humidity,75
+2025-10-04 22:39:29,sensors/temperature,23.3
+2025-10-04 22:39:29,sensors/temperature,23.3
+2025-10-04 22:39:29,sensors/humidity,49
+2025-10-04 22:39:29,sensors/humidity,49
+2025-10-04 22:39:34,sensors/humidity,58
+2025-10-04 22:39:34,sensors/humidity,58
+2025-10-04 22:39:34,sensors/temperature,27.6
+2025-10-04 22:39:34,sensors/temperature,27.6

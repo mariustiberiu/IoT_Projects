@@ -1,0 +1,16 @@
+[
+    {
+        "_id": "68ecb31438b492f06ab5f899",
+        "sensor_name": "Capteur1",
+        "temperature": 25,
+        "humidite": 60,
+        "timestamp": "2025-10-13 08:06:44"
+    },
+    {
+        "_id": "68ecb31438b492f06ab5f89a",
+        "sensor_name": "Capteur2",
+        "temperature": 22,
+        "humidite": 55,
+        "timestamp": "2025-10-13 08:06:44"
+    }
+]
