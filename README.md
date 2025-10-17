@@ -2,7 +2,7 @@
 
 ### **Chapitre 1 – Acquisition de données capteurs**
 - [01.1 Capteur virtuel en Python](01_CapteurVirtuel_Python/)
-- [01.2 Lecture via port s%C3%A9rie avec PySerial](02_LectureSerie_PySerial/)
+- [01.2 Lecture via port serie avec PySerial](02_LectureSerie_PySerial/)
 - [01.3 Stockage local en SQLite](03_Stockage_SQLite/)
 - [01.4 Export CSV et visualisation simple](04_ExportCSV_Visualisation/)
 
