@@ -1,5 +1,0 @@
-pandas
-matplotlib
-pyserial
-numpy
-
