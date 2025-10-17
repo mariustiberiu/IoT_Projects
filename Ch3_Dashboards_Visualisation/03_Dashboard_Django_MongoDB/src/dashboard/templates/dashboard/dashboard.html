@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Capteurs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1>Dashboard Capteurs</h1>
+
+        <!-- Graphiques -->
+        <div class="plots mb-4">
+            <div id="div_temp">
+                {{ plot_temp|safe }}
+            </div>
+            <div id="div_hum">
+                {{ plot_hum|safe }}
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <!-- Filtre par capteur -->
+            <div>
+                <label for="sensorFilter">Filtrer par capteur :</label>
+                <select id="sensorFilter" class="form-select">
+                    <option value="">Tous</option>
+                    {% for sensor in capteurs_uniques %}
+                    <option value="{{ sensor }}">{{ sensor }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <!-- Boutons Export -->
+            <div class="d-flex gap-2">
+                <a href="{% url 'export_csv' %}" class="btn btn-primary">📤 Exporter CSV</a>
+                <a href="{% url 'export_json' %}" class="btn btn-success">📤 Exporter JSON</a>
+            </div>
+        </div>
+
+        <!-- Dernières lectures -->
+        <h2>Dernières lectures (en temps réel)</h2>
+        <table class="table table-bordered" id="last-readings">
+            <thead>
+                <tr>
+                    <th>Sensor</th>
+                    <th>Température (°C)</th>
+                    <th>Humidité (%)</th>
+                    <th>Timestamp</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Contenu injecté par JS -->
+            </tbody>
+        </table>
+
+        <!-- Tableau complet MongoDB -->
+        <h2>📊 Données des capteurs (MongoDB)</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Sensor</th>
+                    <th>Température (°C)</th>
+                    <th>Humidité (%)</th>
+                    <th>Timestamp</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for doc in donnees %}
+                <tr>
+                    <td>{{ doc.id }}</td>
+                    <td>{{ doc.sensor_name }}</td>
+                    <td>{{ doc.temperature }}</td>
+                    <td>{{ doc.humidite }}</td>
+                    <td>{{ doc.timestamp }}</td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="5">Aucune donnée</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const sensorFilter = document.getElementById("sensorFilter");
+
+        // Fonction pour mettre à jour le tableau des dernières lectures
+        async function updateLastReadings() {
+            try {
+                const response = await fetch("{% url 'dernieres_lectures_api' %}");
+                const data = await response.json();
+
+                const tbody = document.querySelector("#last-readings tbody");
+                tbody.innerHTML = "";
+
+                let selected = sensorFilter.value.trim();
+                let filteredRows = data.rows;
+
+                if (selected) {
+                    filteredRows = data.rows.filter(r => r.sensor_name === selected);
+                }
+
+                if (filteredRows.length === 0) {
+                    tbody.innerHTML = "<tr><td colspan='4'>Aucune donnée</td></tr>";
+                } else {
+                    filteredRows.forEach(r => {
+                        const tr = document.createElement("tr");
+                        tr.innerHTML = `
+                    <td>${r.sensor_name}</td>
+                    <td>${r.temperature.toFixed(2)}</td>
+                    <td>${r.humidite.toFixed(2)}</td>
+                    <td>${r.timestamp}</td>
+                `;
+                        tbody.appendChild(tr);
+                    });
+                }
+            } catch (error) {
+                console.error("Erreur lors du chargement des données :", error);
+            }
+        }
+
+        // Initialisation
+        updateLastReadings();
+        setInterval(updateLastReadings, 5000);
+        sensorFilter.addEventListener("change", updateLastReadings);
+    </script>
+</body>
+
+</html>

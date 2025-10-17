@@ -76,7 +76,7 @@ void loop() {
 
 
 Ce fichier peut être ouvert dans l’IDE Arduino et téléversé sur la carte.
-
+g
 🔹 Structure du dossier
 02_LectureSerie_PySerial/
 ├── .venv/                      # environnement virtuel local (NE PAS pousser sur GitHub)

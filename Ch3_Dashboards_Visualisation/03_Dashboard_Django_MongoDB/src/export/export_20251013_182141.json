@@ -1,0 +1,7 @@
+[
+    {
+        "_id": "68ecb31438b492f06ab5f899",
+        "sensor_name": "Capteur1",
+        "temperature": 25,
+        "humidite": 60,
+        "timestamp": 

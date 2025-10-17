@@ -1,0 +1,9 @@
+django
+pymongo 
+mongoengine
+djongo
+matplotlib
+pandas
+plotly
+	
+ 

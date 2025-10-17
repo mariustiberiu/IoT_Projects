@@ -1,0 +1,165 @@
+[{
+  "_id": {
+    "$oid": "68efc02bde2c1760e688d1ac"
+  },
+  "sensor_name": "sensor_1",
+  "temperature": 27.59,
+  "humidite": 46.8,
+  "timestamp": {
+    "$date": "2025-10-15T15:39:23.951Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68efc02dde2c1760e688d1ad"
+  },
+  "sensor_name": "sensor_2",
+  "temperature": 27.83,
+  "humidite": 58.95,
+  "timestamp": {
+    "$date": "2025-10-15T15:39:25.996Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68efc02fde2c1760e688d1ae"
+  },
+  "sensor_name": "sensor_3",
+  "temperature": 20.96,
+  "humidite": 56.71,
+  "timestamp": {
+    "$date": "2025-10-15T15:39:27.998Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68efc032de2c1760e688d1af"
+  },
+  "sensor_name": "sensor_2",
+  "temperature": 22.07,
+  "humidite": 52.61,
+  "timestamp": {
+    "$date": "2025-10-15T15:39:30.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68efc034de2c1760e688d1b0"
+  },
+  "sensor_name": "sensor_3",
+  "temperature": 21.09,
+  "humidite": 57.71,
+  "timestamp": {
+    "$date": "2025-10-15T15:39:32.001Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68efc036de2c1760e688d1b1"
+  },
+  "sensor_name": "sensor_3",
+  "temperature": 21.28,
+  "humidite": 53.17,
+  "timestamp": {
+    "$date": "2025-10-15T15:39:34.003Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68efc038de2c1760e688d1b2"
+  },
+  "sensor_name": "sensor_1",
+  "temperature": 23.62,
+  "humidite": 65.31,
+  "timestamp": {
+    "$date": "2025-10-15T15:39:36.005Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68efc03ade2c1760e688d1b3"
+  },
+  "sensor_name": "sensor_3",
+  "temperature": 20.95,
+  "humidite": 58.32,
+  "timestamp": {
+    "$date": "2025-10-15T15:39:38.007Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68efc03cde2c1760e688d1b4"
+  },
+  "sensor_name": "sensor_1",
+  "temperature": 24.84,
+  "humidite": 45.99,
+  "timestamp": {
+    "$date": "2025-10-15T15:39:40.008Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68efc03ede2c1760e688d1b5"
+  },
+  "sensor_name": "sensor_1",
+  "temperature": 21.64,
+  "humidite": 52.39,
+  "timestamp": {
+    "$date": "2025-10-15T15:39:42.010Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68efc040de2c1760e688d1b6"
+  },
+  "sensor_name": "sensor_3",
+  "temperature": 20.85,
+  "humidite": 53.62,
+  "timestamp": {
+    "$date": "2025-10-15T15:39:44.011Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68efc042de2c1760e688d1b7"
+  },
+  "sensor_name": "sensor_3",
+  "temperature": 26.84,
+  "humidite": 53.61,
+  "timestamp": {
+    "$date": "2025-10-15T15:39:46.013Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68efc044de2c1760e688d1b8"
+  },
+  "sensor_name": "sensor_1",
+  "temperature": 26.18,
+  "humidite": 46.73,
+  "timestamp": {
+    "$date": "2025-10-15T15:39:48.015Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68efc046de2c1760e688d1b9"
+  },
+  "sensor_name": "sensor_3",
+  "temperature": 23.46,
+  "humidite": 57.18,
+  "timestamp": {
+    "$date": "2025-10-15T15:39:50.017Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68efc048de2c1760e688d1ba"
+  },
+  "sensor_name": "sensor_1",
+  "temperature": 25.05,
+  "humidite": 62.81,
+  "timestamp": {
+    "$date": "2025-10-15T15:39:52.019Z"
+  }
+}]
