@@ -1,0 +1,114 @@
+[
+    {
+        "id":1,
+        "timestamp":"2025-09-29 04:15:12",
+        "temperature":24.2019186286,
+        "humidite":42.0912244887,
+        "source":"simulation"
+    },
+    {
+        "id":2,
+        "timestamp":"2025-09-29 04:15:14",
+        "temperature":28.4056624133,
+        "humidite":73.3865407109,
+        "source":"simulation"
+    },
+    {
+        "id":3,
+        "timestamp":"2025-09-29 04:15:16",
+        "temperature":24.6967469015,
+        "humidite":60.308555614,
+        "source":"simulation"
+    },
+    {
+        "id":4,
+        "timestamp":"2025-09-29 04:15:18",
+        "temperature":22.1106314281,
+        "humidite":68.2667970861,
+        "source":"simulation"
+    },
+    {
+        "id":5,
+        "timestamp":"2025-09-29 04:15:20",
+        "temperature":26.1214941253,
+        "humidite":60.6288906388,
+        "source":"simulation"
+    },
+    {
+        "id":6,
+        "timestamp":"2025-09-29 04:15:22",
+        "temperature":21.5858596874,
+        "humidite":78.8369787616,
+        "source":"simulation"
+    },
+    {
+        "id":7,
+        "timestamp":"2025-09-29 04:15:24",
+        "temperature":25.4758451344,
+        "humidite":79.8918865866,
+        "source":"simulation"
+    },
+    {
+        "id":8,
+        "timestamp":"2025-09-29 04:15:26",
+        "temperature":25.7748671279,
+        "humidite":53.9970845355,
+        "source":"simulation"
+    },
+    {
+        "id":9,
+        "timestamp":"2025-09-29 17:34:48",
+        "temperature":25.3929377222,
+        "humidite":48.3993320624,
+        "source":"simulation"
+    },
+    {
+        "id":10,
+        "timestamp":"2025-09-29 17:34:50",
+        "temperature":27.6818068272,
+        "humidite":79.6532434254,
+        "source":"simulation"
+    },
+    {
+        "id":11,
+        "timestamp":"2025-09-29 17:34:52",
+        "temperature":24.7367628387,
+        "humidite":47.891786192,
+        "source":"simulation"
+    },
+    {
+        "id":12,
+        "timestamp":"2025-09-29 17:34:54",
+        "temperature":26.3917593065,
+        "humidite":65.665811107,
+        "source":"simulation"
+    },
+    {
+        "id":13,
+        "timestamp":"2025-09-29 17:34:56",
+        "temperature":27.7262900254,
+        "humidite":79.7068455344,
+        "source":"simulation"
+    },
+    {
+        "id":14,
+        "timestamp":"2025-09-29 17:34:58",
+        "temperature":25.5273441681,
+        "humidite":45.904163718,
+        "source":"simulation"
+    },
+    {
+        "id":15,
+        "timestamp":"2025-09-29 17:35:00",
+        "temperature":23.6089421663,
+        "humidite":74.6451290592,
+        "source":"simulation"
+    },
+    {
+        "id":16,
+        "timestamp":"2025-09-29 17:35:02",
+        "temperature":22.4327567525,
+        "humidite":78.7044522624,
+        "source":"simulation"
+    }
+]
