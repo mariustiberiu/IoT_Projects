@@ -1,7 +1,7 @@
 🧠 Ch2_03 – Interface Graphique MQTT (Tkinter)
 🎯 Description
 
-Ce projet introduit une interface graphique pour interagir avec un broker MQTT, permettant à l’utilisateur de :
+Ce projet introduit une interface graphique pour interagir avec un broker MQTT, permettant à l’utilisateur de et utilise Docker et TLS/SSL avec certificats:
 
 Se connecter à un broker MQTT (par défaut : localhost:1883)
 
@@ -125,3 +125,9 @@ Les warnings de Paho MQTT sont visibles mais le script reste fonctionnel.
 
 Les dossiers data et backup ne sont pas nécessaires pour le fonctionnement actuel, mais je les conserve pour stocker des exemples ou historiques.
 
+
+## Prérequis
+
+- Ce projet utilise **Docker** pour le déploiement du broker MQTT et des services associés.
+- Les communications MQTT sont sécurisées avec **TLS/SSL** grâce aux certificats situés dans le dossier `docker/certs`.
+- Pour exécuter le projet, assurez-vous que le broker MQTT est accessible et que les certificats sont correctement installés.
