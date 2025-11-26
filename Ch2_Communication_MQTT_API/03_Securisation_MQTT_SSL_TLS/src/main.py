@@ -1,38 +1,3 @@
-"""
-=== Objectif de Ch2_03 – Interface MQTT Graphique (Tkinter) ===
-
-Ce sous-chapitre introduit une interface graphique pour visualiser et publier des messages MQTT sans passer uniquement par le terminal.
-
-🧩 Fonctionnalités prévues
-
-✅ Connexion au broker MQTT (localhost par défaut)
-✅ Abonnement à un topic (ex : sensors/#)
-✅ Affichage en temps réel des messages reçus dans une fenêtre Tkinter
-✅ Zone de saisie pour publier des messages
-✅ Boutons :
-
-« Connecter »
-
-« Publier »
-
-« Exporter » (sauvegarde CSV/JSON)
-
-« Quitter »
-✅ Threads séparés pour MQTT et GUI
-✅ Compatible avec les exports de Ch2_01 / Ch2_02
-"""
-
-"""
-=== Ch2_03 – Interface Graphique MQTT (Tkinter) ===
-
-Différences principales par rapport à Ch2_02 :
-1. Interface graphique (Tkinter) au lieu du terminal.
-2. Affichage en temps réel des messages reçus dans une TextBox.
-3. Envoi de messages MQTT depuis la fenêtre.
-4. Bouton pour exporter manuellement les données.
-5. Threads séparés pour ne pas bloquer l’interface.
-"""
-
 import tkinter as tk
 from tkinter import scrolledtext, messagebox
 import paho.mqtt.client as mqtt
@@ -43,7 +8,7 @@ from datetime import datetime
 # --- Répertoires et fichiers ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 EXPORT_DIR = os.path.join(BASE_DIR, "../exports")
-os.makedirs(EXPORT_DIR, exist_ok=True)  # crée le dossier exports s’il n’existe pas
+os.makedirs(EXPORT_DIR, exist_ok=True)
 
 CSV_FILE = os.path.join(EXPORT_DIR, "mqtt_gui_data.csv")
 JSON_FILE = os.path.join(EXPORT_DIR, "mqtt_gui_data.json")
@@ -56,7 +21,6 @@ def save_to_csv(data, output_path=CSV_FILE):
         if not file_exists:
             writer.writeheader()
         writer.writerow(data)
-    print(f"💾 Sauvegarde CSV : {os.path.abspath(output_path)}")
 
 def save_to_json(data, output_path=JSON_FILE):
     messages = []
@@ -69,14 +33,16 @@ def save_to_json(data, output_path=JSON_FILE):
     messages.append(data)
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(messages, f, indent=2)
-    print(f"💾 Sauvegarde JSON : {os.path.abspath(output_path)}")
 
 # --- Callbacks MQTT ---
 def on_connect(client, userdata, flags, rc):
     if rc == 0:
         userdata["log"]("✅ Connecté au broker MQTT\n")
-        client.subscribe(userdata["topic"])
-        userdata["log"](f"📡 Souscrit au topic : {userdata['topic']}\n")
+        # Souscrire une seule fois
+        if not getattr(client, "_subscribed", False):
+            client.subscribe(userdata["topic"])
+            client._subscribed = True
+            userdata["log"](f"📡 Souscrit au topic : {userdata['topic']}\n")
     else:
         userdata["log"](f"❌ Erreur de connexion ({rc})\n")
 
@@ -85,7 +51,6 @@ def on_message(client, userdata, msg):
     payload = msg.payload.decode()
     data = {"timestamp": timestamp, "topic": msg.topic, "payload": payload}
     userdata["log"](f"📥 {timestamp} - {msg.topic} : {payload}\n")
-
     if userdata["format"] in ("csv", "both"):
         save_to_csv(data, userdata["output_csv"])
     if userdata["format"] in ("json", "both"):
@@ -104,6 +69,7 @@ class MQTTApp:
         self.format = "both"
         self.output_csv = CSV_FILE
         self.output_json = JSON_FILE
+        self.client = None  # Pour vérifier la connexion
 
         # Zone d’affichage
         self.text_area = scrolledtext.ScrolledText(root, width=80, height=20)
@@ -123,7 +89,8 @@ class MQTTApp:
         # Boutons
         frame_btn = tk.Frame(root)
         frame_btn.pack(pady=10)
-        tk.Button(frame_btn, text="Connecter", command=self.connect_mqtt).grid(row=0, column=0, padx=5)
+        self.btn_connect = tk.Button(frame_btn, text="Connecter", command=self.connect_mqtt)
+        self.btn_connect.grid(row=0, column=0, padx=5)
         tk.Button(frame_btn, text="Publier", command=self.publish_message).grid(row=0, column=1, padx=5)
         tk.Button(frame_btn, text="Exporter", command=self.export_files).grid(row=0, column=2, padx=5)
         tk.Button(frame_btn, text="Quitter", command=self.root.quit).grid(row=0, column=3, padx=5)
@@ -133,6 +100,10 @@ class MQTTApp:
         self.text_area.see(tk.END)
 
     def connect_mqtt(self):
+        if self.client:
+            self.log("⚠️ Déjà connecté au broker\n")
+            return
+
         self.client = mqtt.Client(userdata={
             "topic": self.topic,
             "output_csv": self.output_csv,
@@ -143,12 +114,27 @@ class MQTTApp:
         self.client.on_connect = on_connect
         self.client.on_message = on_message
         self.client.connect(self.broker, self.port, keepalive=60)
+        
+         # --- TLS/SSL ---
+        self.client.tls_set(
+            ca_certs="../docker/certs/ca.crt",
+            certfile="../docker/certs/server.crt",
+            keyfile="../docker/certs/server.key"
+    )
 
+        self.client.connect(self.broker, 8883, keepalive=60)  # Port TLS
+        # Démarrage thread MQTT
         self.thread = threading.Thread(target=self.client.loop_forever, daemon=True)
         self.thread.start()
         self.log("🚀 Connexion en cours...\n")
 
+        # Désactiver le bouton
+        self.btn_connect.config(state="disabled")
+
     def publish_message(self):
+        if not self.client:
+            messagebox.showwarning("Pas connecté", "Connectez-vous au broker avant de publier.")
+            return
         topic = self.entry_topic.get().strip()
         msg = self.entry_msg.get().strip()
         if topic and msg:

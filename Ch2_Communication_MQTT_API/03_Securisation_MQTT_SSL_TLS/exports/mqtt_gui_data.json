@@ -1,7 +1,47 @@
 [
   {
-    "timestamp": "2025-10-05 00:07:13",
+    "timestamp": "2025-11-12 17:46:52",
     "topic": "sensors/manual",
-    "payload": "33.3"
+    "payload": "5454"
+  },
+  {
+    "timestamp": "2025-11-12 17:46:52",
+    "topic": "sensors/manual",
+    "payload": "5454"
+  },
+  {
+    "timestamp": "2025-11-12 17:47:18",
+    "topic": "sensors/manual",
+    "payload": "fasdf"
+  },
+  {
+    "timestamp": "2025-11-12 17:47:32",
+    "topic": "sensors/manual",
+    "payload": "adf"
+  },
+  {
+    "timestamp": "2025-11-14 06:25:19",
+    "topic": "sensors/manual",
+    "payload": "je me souviens de toi et de ce qu\u2019on a construit ensemble."
+  },
+  {
+    "timestamp": "2025-11-14 09:19:46",
+    "topic": "sensors/manual",
+    "payload": "adfadfaf"
+  },
+  {
+    "timestamp": "2025-11-14 09:21:09",
+    "topic": "sensors/manual",
+    "payload": "adfadfaf"
+  },
+  {
+    "timestamp": "2025-11-14 09:29:33",
+    "topic": "sensors/manual",
+    "payload": "6354654"
+  },
+  {
+    "timestamp": "2025-11-14 09:31:01",
+    "topic": "sensors/manual",
+    "payload": "25554"
   }
 ]

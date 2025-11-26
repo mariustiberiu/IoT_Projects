@@ -1,35 +1,32 @@
-"""
-Simulateur temps réel pour MongoDB
-Insère des documents dans la collection 'capteurs' de 'ma_base'
-"""
-
+import pandas as pd
+import numpy as np
+from datetime import datetime
 import time
-import random
-from pymongo import MongoClient
-from datetime import datetime, timezone
+import os
 
-# Connexion MongoDB
-client = MongoClient("mongodb://localhost:27017/")  # même instance que ton dashboard
-db = client["ma_base"]
-capteurs = db["capteurs"]
+DATA_DIR = "data"
+os.makedirs(DATA_DIR, exist_ok=True)
 
-# Liste des capteurs simulés
-liste_capteurs = ["sensor_1", "sensor_2", "sensor_3"]
+CSV_FILE = os.path.join(DATA_DIR, "sample.csv")
+JSON_FILE = os.path.join(DATA_DIR, "sample.json")
 
-def simulate(interval=2):
-    i = 0
-    while True:
-        i += 1
-        doc = {
-            "sensor_name": random.choice(liste_capteurs),
-            "temperature": round(20 + random.random() * 8, 2),
-            "humidite": round(40 + random.random() * 30, 2),
-            "timestamp":  datetime.now(timezone.utc)
-        }
-        capteurs.insert_one(doc)
-        print(f"Inserted sample #{i} -> {doc}")
-        time.sleep(interval)
+# Initialise fichiers si inexistants
+if not os.path.exists(CSV_FILE) or not os.path.exists(JSON_FILE):
+    timestamps = pd.date_range(start=datetime.now(), periods=20, freq="S")
+    temperature = np.random.randint(18, 35, 20)
+    humidity = np.random.randint(30, 90, 20)
+    df = pd.DataFrame({"timestamp": timestamps, "temperature": temperature, "humidity": humidity})
+    df.to_csv(CSV_FILE, index=False)
+    df.to_json(JSON_FILE, orient="records", date_format="iso")
 
-if __name__ == "__main__":
-    print("Simulation démarrée. Ctrl+C pour arrêter.")
-    simulate()
+while True:
+    df = pd.read_csv(CSV_FILE)
+    new_row = {
+        "timestamp": datetime.now().isoformat(),
+        "temperature": np.random.randint(18, 35),
+        "humidity": np.random.randint(30, 90)
+    }
+    df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
+    df.to_csv(CSV_FILE, index=False)
+    df.to_json(JSON_FILE, orient="records", date_format="iso")
+    time.sleep(1)

@@ -1,0 +1,14 @@
+services:
+  mosquitto:
+    image: eclipse-mosquitto:2
+    container_name: mosquitto_broker
+    restart: unless-stopped
+    ports:
+      - "1883:1883" # non sécurisé
+      - "9001:9001" # WebSocket
+      - "8883:8883" # TLS/SSL
+    volumes:
+      - ./config:/mosquitto/config
+      - ./data:/mosquitto/data
+      - ./log:/mosquitto/log
+      - ./certs:/mosquitto/certs

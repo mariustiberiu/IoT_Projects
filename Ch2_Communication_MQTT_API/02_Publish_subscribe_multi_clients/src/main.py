@@ -46,6 +46,8 @@ def simulate_sensors(client, stop_event):
         print(f"📤 Message simulé {client._client_id.decode()}: {topic}={payload}")
         time.sleep(5)
 
+
+
 # --- Main ---
 def main():
     parser=argparse.ArgumentParser()
@@ -59,6 +61,18 @@ def main():
 
     output_csv=args.output+".csv"
     output_json=args.output+".json"
+
+    # Export final pour screenshot
+    sample_data = {
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "topic": "sensors/manual",
+        "payload": "Message pour screenshot export"
+                }   
+    save_to_csv(sample_data, output_csv)
+    save_to_json(sample_data, output_json)
+    print(f"💾 CSV présent : {output_csv}")
+    print(f"💾 JSON présent : {output_json}")
+
 
     # Création de plusieurs clients
     clients=[]

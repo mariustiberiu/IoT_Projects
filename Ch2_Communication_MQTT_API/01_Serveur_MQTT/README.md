@@ -31,6 +31,7 @@ net start mosquitto
 01_Serveur_MQTT/
 ├─ src/
 │  ├─ main.py          # script principal MQTT
+      publish_test
 ├─ exports/
 │  ├─ mqtt_data.csv
 │  └─ mqtt_data.json

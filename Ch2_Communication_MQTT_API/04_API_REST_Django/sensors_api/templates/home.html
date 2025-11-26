@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>API Sensors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 18px;
+            margin: 10px;
+            background-color: #534caf;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .btn:hover {
+            background-color: #065055;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>✅ API Sensors Running</h1>
+    <p>Choisissez une action :</p>
+
+    <!-- Boutons GET et Admin -->
+    <a class="btn" href="/api/data/">📄 Voir les données (GET)</a>
+    <a class="btn" href="/admin/">🔐 Admin Django</a>
+
+    <!-- Bouton POST interactif -->
+    <button class="btn" onclick="sendPost()">➕ Tester POST (Client REST)</button>
+
+    <script>
+        function sendPost() {
+            const topic = prompt("Entrez le topic :", "sensors/temperature");
+            const value = prompt("Entrez la valeur :", "25.5");
+
+            if (!topic || !value) return;
+
+            fetch("/api/data/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-CSRFToken": "{{ csrf_token }}"
+                },
+                body: JSON.stringify({ topic: topic, value: parseFloat(value) })
+            })
+                .then(response => response.json())
+                .then(data => alert("✅ Donnée envoyée : " + JSON.stringify(data)))
+                .catch(error => alert("❌ Erreur : " + error));
+        }
+    </script>
+</body>
+
+</html>

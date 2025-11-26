@@ -1,7 +1,52 @@
 [
   {
-    "timestamp": "2025-10-04 22:39:34",
+    "timestamp": "2025-11-14 12:01:28",
+    "topic": "sensors/humidity",
+    "payload": "35"
+  },
+  {
+    "timestamp": "2025-11-14 12:01:28",
     "topic": "sensors/temperature",
-    "payload": "27.6"
+    "payload": "21.9"
+  },
+  {
+    "timestamp": "2025-11-14 12:01:28",
+    "topic": "sensors/temperature",
+    "payload": "21.9"
+  },
+  {
+    "timestamp": "2025-11-14 12:01:33",
+    "topic": "sensors/temperature",
+    "payload": "27.5"
+  },
+  {
+    "timestamp": "2025-11-14 12:01:33",
+    "topic": "sensors/humidity",
+    "payload": "40"
+  },
+  {
+    "timestamp": "2025-11-14 12:01:33",
+    "topic": "sensors/humidity",
+    "payload": "40"
+  },
+  {
+    "timestamp": "2025-11-14 12:01:38",
+    "topic": "sensors/humidity",
+    "payload": "55"
+  },
+  {
+    "timestamp": "2025-11-14 12:01:38",
+    "topic": "sensors/humidity",
+    "payload": "55"
+  },
+  {
+    "timestamp": "2025-11-14 12:01:38",
+    "topic": "sensors/humidity",
+    "payload": "59"
+  },
+  {
+    "timestamp": "2025-11-14 12:01:38",
+    "topic": "sensors/humidity",
+    "payload": "59"
   }
 ]

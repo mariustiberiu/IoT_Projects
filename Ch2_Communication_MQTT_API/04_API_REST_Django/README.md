@@ -1,38 +1,30 @@
-Ch2_04 – API REST Django (Final)
-Description
+🎯 Description
 
-Ce projet met en place une API REST avec Django pour gérer les capteurs et les messages MQTT. L’API permet :
+Ce projet met en place une API REST avec Django & Django REST Framework pour gérer des données envoyées par MQTT ou directement via HTTP POST.
 
-De recevoir et stocker des données de capteurs via MQTT
+Fonctionnalités :
 
-De fournir des endpoints REST pour consulter ou créer des messages
+✅ Réception de messages MQTT → stockage automatique en base
+✅ Endpoints REST pour consulter ou créer des données
+✅ Export automatique CSV & JSON
+✅ Tests via client REST ou scripts Python
 
-D’exporter automatiquement les données en CSV et JSON
+Ce travail fait suite aux chapitres : Ch2_01 → Ch2_03.
 
-De tester rapidement les publications via MQTT ou l’API REST
+🚀 Installation
 
-Cette version s’inspire des projets précédents (Ch2_01 à Ch2_03), mais apporte :
-
-Intégration complète avec Django REST Framework
-
-Gestion automatique des messages via /api/data/
-
-Support pour l’export CSV/JSON similaire aux chapitres précédents
-
-Installation
-
-Créer et activer un environnement virtuel :
+1️⃣ Créer un environnement virtuel et l’activer :
 
 python -m venv .venv
-.\.venv\Scripts\activate
+.\.venv\Scripts\activate  # sous Windows
 
 
-Installer les dépendances :
+2️⃣ Installer les dépendances :
 
 pip install -r requirements.txt
 
 
-requirements.txt contient :
+📌 Liste des paquets utilisés :
 
 django
 djangorestframework
@@ -40,56 +32,31 @@ paho-mqtt
 tabulate
 
 
-Créer la base de données et appliquer les migrations :
+3️⃣ Préparer la base de données :
 
 python manage.py makemigrations
 python manage.py migrate
 
 
-Lancer le serveur Django :
+4️⃣ Lancer le serveur :
 
 python manage.py runserver
 
-Structure du projet
+
+Serveur accessible sur :
+👉 http://127.0.0.1:8000/
+
+📂 Structure du projet
 04_API_REST_Django/
-├─ README.md
-├─ api_rest/
-│  ├─ __init__.py
-│  ├─ asgi.py
-│  ├─ settings.py
-│  ├─ urls.py
-│  └─ wsgi.py
-├─ backup/
-├─ data/
-│  ├─ sample.csv
-│  └─ sample.json
+├─ api_rest/          # Projet Django
+├─ sensors_api/       # Application API REST
+├─ data/              # Données d'exemple
+├─ exports/           # Exports CSV / JSON automatiques
+├─ screenshots/       # Captures pour le rapport
 ├─ db.sqlite3
-├─ exports/
-│  ├─ mqtt_api_data.csv
-│  └─ mqtt_api_data.json
 ├─ manage.py
 ├─ requirements.txt
-├─ screenshots/
-│  ├─ api_terminal_start.png
-│  ├─ api_message_post.png
-│  ├─ api_message_received.png
-│  ├─ api_export_files.png
-│  └─ api_quit_server.png
-├─ sensors_api/
-│  ├─ __init__.py
-│  ├─ admin.py
-│  ├─ apps.py
-│  ├─ migrations/
-│  ├─ models.py
-│  ├─ serializers.py
-│  ├─ tests.py
-│  ├─ urls.py
-│  └─ views.py
-└─ src/
-   ├─ check_exports.py
-   ├─ main.py
-   ├─ mqtt_listener.py
-   └─ mqtt_publisher.py
+└─ README.md
 
 Endpoints REST
 
@@ -412,3 +379,81 @@ Change la méthode en GET
 Garde la même URL : http://127.0.0.1:8000/api/data/
 
 Clique sur Send pour voir toutes les entrées.
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>API Sensors - Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f5f5f5;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #0078ff;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0078ff;
+            color: white;
+            padding: 12px 20px;
+            margin: 10px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .btn:hover {
+            background: #005fcc;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>API Sensors Running ✅</h1>
+
+    <!-- Bouton GET -->
+    <a href="{% url 'sensor-data-list-create' %}"><button>Voir les données (GET)</button></a>
+
+    <!-- Bouton POST -->
+    <form id="postForm">
+        <input type="hidden" name="topic" value="sensors/temperature">
+        <input type="hidden" name="value" value="25.5">
+        <button type="button" onclick="sendPost()">Envoyer une donnée de test (POST)</button>
+    </form>
+
+    <script>
+        function sendPost() {
+            fetch("{% url 'sensor-data-list-create' %}", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-CSRFToken": "{{ csrf_token }}"
+                },
+                body: JSON.stringify({
+                    topic: "sensors/temperature",
+                    value: 25.5
+                })
+            })
+                .then(response => response.json())
+                .then(data => alert("Donnée envoyée : " + JSON.stringify(data)))
+                .catch(error => alert("Erreur : " + error));
+        }
+    </script>
+    <!-- <h1>✅ API Sensors Running</h1>
+    <p>Choisissez une action :</p>
+
+    <a class="btn" href="/api/data/">📄 Voir les données</a>
+    <a class="btn" href="/admin/">🔐 Admin Django</a>
+    <a class="btn" href="/api/data/">➕ Tester POST via Client REST</a> -->
+
+</body>
+
+</html>
